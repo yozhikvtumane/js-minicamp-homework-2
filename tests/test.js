@@ -90,6 +90,7 @@ describe('isPrime(num)', function() {
   it('should return true if num is prime', function() {
     expect(exercises.isPrime(7)).toBe(true);
     expect(exercises.isPrime(97)).toBe(true);
+    expect(exercises.isPrime(2)).toBe(true);
   });
   it('should return false if num is not prime', function() {
     expect(exercises.isPrime(10)).toBe(false);

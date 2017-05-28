@@ -76,18 +76,24 @@ function fizzBuzz(num) {
   }
 }
 
+
+// function isPrime(num) {
+//   for(var i = 2; i < num; i++)
+//     if(num % i === 0) { 
+//       return false;
+//     }
+//   if (num !== 1) {
+//     return true;
+//   }
+// }
+
 function isPrime(num) {
-  //return true if num is prime.
-  //otherwise return false
-  //hint: a prime number is only evenly divisible by itself and 1
-  //hint2: you can solve this using a for loop
-  //note: 0 and 1 are NOT considered prime numbers
   if (num < 2) {
     return false;
   }
 
   for (var i = 2; i <= num; i++) {
-    if ( num % i == 0 ) {
+    if ( num % i == 0 && i != num) {
       return false;
     } else {
       return true;
@@ -163,7 +169,7 @@ function addNumbers(numbers) {
 function averageTestScore(testScores) {
   //testScores is an array.  Iterate over testScores and compute the average.
   //return the average
-    var z = testScores[0];
+  var z = testScores[0];
   for (var i = 1; i < testScores.length; i++) {
     z += testScores[i];
   }
